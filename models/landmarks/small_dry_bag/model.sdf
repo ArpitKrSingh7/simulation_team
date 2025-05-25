@@ -1,0 +1,56 @@
+<?xml version='1.0' ?>
+<sdf version="1.6">
+    <model name="small_dry_bag">
+        <static>false</static>
+        <link name="link">
+            <inertial>
+                <pose>0 0.02 0.125 0 0 0</pose>
+                <mass>1</mass>
+                <inertia>
+                    <ixx>0.00747007</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyy>0.00833630</iyy>
+                    <iyz>0.0</iyz>
+                    <izz>0.00414589</izz>
+                </inertia>
+            </inertial>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/smalldrybag.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>1.0 1.0 1.0</diffuse>
+                    <specular>1.0 1.0 1.0</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/SmallDryBag_Albedo.jpg</albedo_map>
+                            <normal_map>materials/textures/SmallDryBag_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/SmallDryBag_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="Cylinder001">
+                <pose>-9.6187e-06 0.0238337 0.0945894 0.0 0.0 0.0</pose>
+                <geometry>
+                    <cylinder>
+                        <length>0.217212</length>
+                        <radius>0.0797048</radius>
+                    </cylinder>
+                </geometry>
+            </collision>
+            <collision name="Cylinder002">
+                <pose>-9.62242e-06 0.019915 0.213525 0.170708 0.0 0.0</pose>
+                <geometry>
+                    <cylinder>
+                        <length>0.0673358</length>
+                        <radius>0.0557934</radius>
+                    </cylinder>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
