@@ -142,7 +142,14 @@
     <include>
       <uri>model://landmarks/fidget_spinner</uri>
       <pose>7.61 10.27 0.09 -3.09 -0.01 1.67</pose>
-    </include> -->
+    </include> 
+    
+       <include>
+      <uri>model://landmarks/breakfast</uri>
+      <pose>2.92 -0.57 -0.06 0.38 0.06 2.86</pose>
+    </include>
+-->
+
 
     <include>
       <uri>model://landmarks/small_blue_box</uri>
@@ -159,11 +166,7 @@
       <pose>2.35 8.48 0.23 3.02 -0.01 0.55</pose>
     </include>
 
-    <include>
-      <uri>model://landmarks/breakfast</uri>
-      <pose>2.92 -0.57 -0.06 0.38 0.06 2.86</pose>
-    </include>
-
+ 
     <include>
       <uri>model://landmarks/fire_extinguisher</uri>
       <pose>7.55 1.15 0.04 -1.15 0.08 -1.85</pose>
